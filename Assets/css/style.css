@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Lora&display|Open+Sans=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: #F2E9D8;
+body {
+    background-color: #F2E9D8;
+    text-align: justify;
+    font-family: Lora, Georgia, 'Times New Roman', Times, serif;
+    /*
+    <div id="container" style="display: flex; flex-direction:column"> 
+    <div class="content"> 
+
+    </div>
+        <div class="content"> 
+
+        </div>
+    </div>*/
 }
 
-.header{
+                    /*  HEADER BAR-NAV ELEMENT  */
+
+.header {
+    top: 0;
     position: fixed;
+    z-index: 800;
     background-color: #3AB09E;
     width: 100%;
     height: 80px;
@@ -18,14 +30,20 @@
     font-size: 120%;
     list-style-type: none;
     letter-spacing: 4px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
 }
 
 #menu li {
   float: left;
-  margin-top: 20px;
   margin-right: 30px;
   margin-left: 20px;
   background-color: #3ab09e;
+  font-family: 'open sans', Georgia, 'Times New Roman';
+  text-transform: uppercase;
 }
 
 #menu a {
@@ -39,82 +57,40 @@
     margin-left: 15%;
     background-color: #3ab09e;
     overflow: hidden;
-    position: relative;
 }
 
 .logo-small img {
+    width: auto;
+    height : auto;
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    object-fit: contain;
+    padding-top: 2px;
     background-color: #3ab09e;
 }
 
-.wrapper {
+                    /*  HEADER BAR:NAV ELEMENT-END */
+                    /*  IMAGE ELEMENT  */
+
+.hero-image {
+    margin-top: 80px;
+    object-fit: contain;
+    display: flex;
+    height: 300px;
+}
+
+.hero-image img {
+  width: 100vw;
+  height: 30vh;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    top: 150px;
     margin-left: 10%;
     margin-right: 10%;
-    height: 500px;
     background-color: #fff;
+    padding: 80px 30px 0 30px;
+    z-index: 500;
 }
-
-/* colours used:
-    green: #3AB09E
-    background: #F2E9D8
-*/
-
-/* 
-.logo {
-    width: 5%;
-    display: flex;
-}
-
-.logo-small {
-    margin-left: 30px;
-    margin-top: 30px;
-    height: 10vh;
-    border: 2px solid red;
-}
-
-.menu {
-  list-style-type: none;
-  letter-spacing: 4px;
-  text-align: center;
-  font-family: "open sans" Arlo;
-  text-transform: uppercase;
-}
-
-#menu li {
-  float: right;
-  margin-right: 30px;
-}
-
-#menu a {
-  text-decoration: none;
-  color: inherit;
-  text-align: inline;
-}
-
-.introduction {
-    background-color: #fff;
-    margin: 5% 10%;
-    padding: 20px;
-    position: relative;
-}
-
-#logo {
-    width: 100%;
-    height: 206px;
-    border: solid #000 2px;
-    background: url("https://i0.wp.com/kinsalebayfoodco.com/wp-content/uploads/2019/10/Kinsale-Bay-Food-Company-Gluten-Free-Logo.png?resize=300%2C279&ssl=1") no-repeat center center;
-}
-
-body {
-  font-family: georgia, serif;
-  color: #000;
-  background-color: #f2e9d8;
-  margin-top: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-family: Arvo, serif;
-} */
